@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+ <html lang="id">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>Pororo5</title>
+ <style>
+     body {
+             margin: 0;
+                     font-family: Arial, sans-serif;
+                             background-color: #fde7f0;
+                                 }
+                                     .navbar {
+                                             overflow: hidden;
+                                                     background-color: #ec407a;
+                                                             display: flex;
+                                                                     justify-content: space-between;
+                                                                             align-items: center;
+                                                                                     padding: 14px 20px;
+                                                                                             position: sticky;
+                                                                                                     top: 0;
+                                                                                                             z-index: 999;
+                                                                                                                 }
+
+                                                                                                                     .navbar .logo {
+                                                                                                                             color: white;
+                                                                                                                                     font-size: 20px;
+                                                                                                                                             font-weight: bold;
+                                                                                                                                                     text-decoration: none;
+                                                                                                                                                         }
+
+                                                                                                                                                             .navbar .menu {
+                                                                                                                                                                     display: flex;
+                                                                                                                                                                         }
+
+                                                                                                                                                                             .navbar .menu a {
+                                                                                                                                                                                     color: white;
+                                                                                                                                                                                             padding: 14px 16px;
+                                                                                                                                                                                                     text-decoration: none;
+                                                                                                                                                                                                             font-weight: bold;
+                                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                                     .navbar .menu a:hover {
+                                                                                                                                                                                                                             background-color: #d81b60;
+                                                                                                                                                                                                                                 }
+
+                                                                                                                                                                                                                                     .navbar .icon {
+                                                                                                                                                                                                                                             display: none;
+                                                                                                                                                                                                                                                     font-size: 28px;
+                                                                                                                                                                                                                                                             color: white;
+                                                                                                                                                                                                                                                                     cursor: pointer;
+                                                                                                                                                                                                                                                                         }
+
+                                                                                                                                                                                                                                                                             @media screen and (max-width: 768px) {
+                                                                                                                                                                                                                                                                                     .navbar .menu {
+                                                                                                                                                                                                                                                                                                 display: none;
+                                                                                                                                                                                                                                                                                                             flex-direction: column;
+                                                                                                                                                                                                                                                                                                                         width: 100%;
+                                                                                                                                                                                                                                                                                                                                     background-color: #ec407a;
+                                                                                                                                                                                                                                                                                                                                             }
+                                                                                                                                                                                                                                                                                                                                                     .navbar .menu.active {
+                                                                                                                                                                                                                                                                                                                                                                 display: flex;
+                                                                                                                                                                                                                                                                                                                                                                         }
+                                                                                                                                                                                                                                                                                                                                                                                 .navbar .icon {
+                                                                                                                                                                                                                                                                                                                                                                                             display: block;
+                                                                                                                                                                                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                                                                                                                                                                                         }
+
+                                                                                                                                                                                                                                                                                                                                                                                                             /* Section example */
+                                                                                                                                                                                                                                                                                                                                                                                                                 .section {
+                                                                                                                                                                                                                                                                                                                                                                                                                         padding: 40px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                 text-align: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                     }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                         .section h1 {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                 color: #e91e63;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                     }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                         button {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                               box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                     cursor: pointer;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                           transition: background 0.3s ease;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               </style>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               </head>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <body>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <!-- Navbar -->
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <div class="navbar">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <a href="#" class="logo">pororo5</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <div class="menu" id="navMenu">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <a href="index.html">Beranda</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <a href="About.html">Tentang kami</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <a href="Design.html">Design Product</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <a>Product</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <div class="icon" onclick="toggleMenu()">&#9776;</div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <div id="Product" class="section">
+    <h1>Produk</h1>
+    <p>Kami memiliki 2 jenis produk</p>
+    <button style="
+        background: linear-gradient(45deg, #FF1493, #FF69B4);
+        border: none;
+        border-radius: 12px;
+        color: #fde7f0;
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 15px;
+    "
+    onclick="window.open('https://colab.research.google.com/drive/1cDWlTbH_-ZnPriHaezBHFpb-sbCApoLq?usp=sharing', '_blank')"
+    onmouseover="this.style.background='linear-gradient(45deg, #FF69B4, #FF1493)'" 
+    onmouseout="this.style.background='linear-gradient(45deg, #FF1493, #FF69B4)'"
+    >
+      Game Python
+    </button>
+
+    <button id="btnScratch" style="
+        background: linear-gradient(45deg, #FF69B4, #FF1493);
+        border: none;
+        border-radius: 12px;
+        color: #fde7f0;
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: bold;
+    ">
+      Mainkan Game Scratch
+    </button>
+
+    <div id="scratchGame" style="margin-top: 20px; display: none; text-align: center;">
+      <iframe 
+        src="https://scratch.mit.edu/projects/1186034933/embed" 
+        allowtransparency="true" 
+        width="485" 
+        height="402" 
+        frameborder="0" 
+        scrolling="no" 
+        allowfullscreen>
+      </iframe>
+    </div>
+</div>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("navMenu");
+        menu.classList.toggle("active");
+    }
+
+    // Tombol untuk mainkan / sembunyikan game Scratch
+    document.getElementById('btnScratch').addEventListener('click', function() {
+        const game = document.getElementById('scratchGame');
+        if (game.style.display === 'none') {
+            game.style.display = 'block';
+            this.textContent = 'Sembunyikan Game Scratch';
+        } else {
+            game.style.display = 'none';
+            this.textContent = 'Mainkan Game Scratch';
+        }
+    });
+</script>
+
+</body>
+</html>
